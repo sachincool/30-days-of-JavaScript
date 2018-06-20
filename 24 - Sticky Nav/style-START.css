@@ -11,7 +11,10 @@ body {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+.fixed-nav nav{
+  position:fixed;
+  box-shadow: 0 5px rgba(0,0,0,0.1);
+}
 .site-wrap {
   max-width: 700px;
   margin: 70px auto;
@@ -23,6 +26,10 @@ body {
   transition: transform 0.5s;
 }
 
+.fixed-nav .site-wrap {
+  transform: scale(1);
+}
+
 header {
   text-align: center;
   height:50vh;
@@ -31,6 +38,9 @@ header {
   display:flex;
   align-items:center;
   justify-content: center;
+}
+.fixed-nav li.logo {
+  max-width: 500px;
 }
 
 h1 {
